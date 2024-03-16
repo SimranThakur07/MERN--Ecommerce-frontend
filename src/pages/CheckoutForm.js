@@ -56,8 +56,7 @@ const Checkout = () => {
       confirmParams: { return_url: window.location.origin },
       redirect: "if_required",
     });
-    console.log(elements);
-
+    
     if (error) {
       setIsProcessing(false);
       return toast.error(error.message || "Something went wrong");

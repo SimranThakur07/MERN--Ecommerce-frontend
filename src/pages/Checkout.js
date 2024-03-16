@@ -46,7 +46,7 @@ const Checkout = () => {
   
     try {
       const { data } = await axios.post(
-        `${server}api/v1/payment/create`,
+        `${server}/api/v1/payment/create`,
         {
           amount: total,
           description: "Product Description",
