@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Martel+Sans:wght@200;300;400;600;700;900&display=swap');
+@import "../styles/Navbar.css";
+@import "../styles/Banner.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --color1: #4152EA;
+    --color2: #555555;
+    --color3: #8CBECF;
+    --color4: #002347;
+    --color5: #05274B;
+    --color6: #FFFFFF;
+    --color7: #222222;
+    --color8: #F1F6F7;
+    --color9: #8894ff;
+    --color10: #002347;
+    --color11: #05274B;
+}
+ul{
+    margin-bottom: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+input{
+    outline: none;
+}

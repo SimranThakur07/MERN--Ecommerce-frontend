@@ -1,0 +1,114 @@
+footer{
+    background-color: var(--color10);
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-bottom{
+    background-color: var(--color11);
+    padding: 20px;
+    text-align: center;
+    color: var(--color6);
+}
+footer h2,
+footer h6{
+    color: var(--color6);
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-left: 10px;
+}
+
+footer p,
+footer ul li{
+    color: #7B8381;
+    text-align: justify;
+    font-size: 14px;
+}
+footer ul li{
+    margin: 15px 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+footer ul li:hover{
+    color: var(--color1);
+}
+footer span{
+    display: flex;
+    color: var(--color6);
+    text-align: left;
+}
+.footer-icon{
+    background-color: var(--color1);
+    color: var(--color6);
+    border-radius: 50%;
+    padding: 6px;
+    text-align: center;
+    margin-right: 10px;
+}
+.footer-contact p{
+margin-bottom: 0;
+margin-left: 35px;
+}
+.supscription{
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    background-color: var(--color6);
+    height: 350px;
+    margin-bottom: -7%;
+    border-radius: 6px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.supscription h3{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.1;
+    font-family: "Oswald";
+    color: #222;
+    margin-bottom: 16px;
+}
+.supscription p{
+    color: #777;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.667;
+}
+.supscription input{
+    border: 1px solid #a6a5a5;
+    border-radius: 24px;
+    padding: 9px 22px;
+    outline: none;
+}
+.supscription button{
+    background-color: var(--color1);
+    color: var(--color6);
+    border: none;
+    border-radius: 24px;
+    padding: 9px 22px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+@media screen and (max-width: 768px){
+    .supscription h3{
+        font-size: 28px;
+    }
+    .supscription{
+        text-align: center;
+        padding: 5px;
+    }
+    .supscription button{
+        margin-left: 0;
+    }
+    .supscription button{
+        margin-top: 15px;
+    }
+}

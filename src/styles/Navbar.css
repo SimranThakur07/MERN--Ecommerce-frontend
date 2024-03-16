@@ -1,0 +1,107 @@
+nav{
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 10px 27px 3px rgba(221,221,221,0.3);
+}
+nav .list-items{
+    display: flex;
+    align-items: center;
+}
+nav .list-items .nav-items{
+    font-size: 16px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+nav .list-items .nav-items a{
+    color: var(--color7);
+}
+nav .list-items .nav-items a.active{
+    color: var(--color1);
+}
+nav .list-items .nav-items span{
+    font-size: 20px;
+}
+.toggler{
+    font-size: 26px;
+    display: none;
+}
+.search-box{
+    outline: none;
+    border: 2px solid var(--color1);
+    width: 30vw;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    width: 80%;
+}
+.search-box a{
+    display: block;
+    width: 20%;
+}
+.upper-box{
+    display: flex;
+    background-color: var(--color1);
+    height: 140px;
+    display: none;
+}
+.sm-text{
+    font-size: 13px !important;
+}
+.search-list{
+    top: 104%;
+    max-height: 350px;
+    overflow-y: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+@media screen and (max-width: 768px){
+    nav{
+        padding: 25px 10px;
+    }
+    nav .list-items{
+        flex-direction: column;
+        position: absolute;
+        left: -80%;
+        top: 87px;
+        background-color: var(--color6);
+        width: 70%;
+        z-index: 999;
+        align-items: flex-start;
+        padding-left: 20px;
+        display: flex;
+        height: 100vh;
+        transition: all 0.3s ease;
+        
+    }
+    nav .list-items.open{
+        left: 0;
+    }
+    .upper-box{
+        display: flex;
+    }
+    nav .list-items .nav-items{
+        margin: 20px 15px;
+        width: 80%;
+    }
+    .toggler{
+        display: initial;
+        margin-left: 5px;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .logo {
+        width: 100px;
+    }
+    .sm-text{
+        font-size: 18px !important;
+    }
+}

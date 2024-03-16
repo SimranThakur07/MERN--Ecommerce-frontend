@@ -1,0 +1,72 @@
+.review-header{
+    background-color: #F1F6F7;
+}
+
+.review-header button{
+    border: 1px solid var(--color2);
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 13px;
+    background-color: var(--color6);
+}
+
+.description-card{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+    padding: 20px 15px;
+    text-align: justify;
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.specification-card table tr:first-child td{
+    border-top: none;
+}
+.specification-card,
+.comment-card{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.specification-card table tr td{
+    border-top: 1px solid #dee2e6;
+    padding: 10px 60px 10px 60px ;
+    color: #777777;
+}
+.comment-head span{
+    font-weight: 600;
+}
+.comment-head p{
+    font-size: 14px;
+    color: #777777;
+    font-weight: 600;
+}
+.reply-btn{
+    border: 1px solid #777777;
+    font-size: 13px;
+    padding: 6px 15px;
+    border-radius: 18px;
+    background: transparent;
+}
+.comment{
+    text-align: justify;
+    color: #777777;
+    font-size: 15px;
+}
+.comment-head img{
+    width: 80px;
+}
+.review-box1{
+    background-color: #F1F6F7;
+    text-align: center;
+    padding: 15px 40px;
+}
+.review-mess input,
+.review-mess textarea{
+    font-size: 13px;
+}
+@media screen and (max-width: 480px) {
+    .specification-card table tr td{
+        padding: 10px;
+    }
+}
