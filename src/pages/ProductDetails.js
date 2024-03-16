@@ -11,7 +11,6 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/reducer/cartReducer";
 import toast from "react-hot-toast";
 import Loader from "../components/cards/Loader";
-import Magnifier from "react-magnifier";
 const ProductDetails = () => {
   const { id } = useParams();
   const { data, isLoading } = useProductDetailsQuery(id);
@@ -33,7 +32,7 @@ const ProductDetails = () => {
         ) : (
           <div className="row pt-4">
             <div className="col-lg-6 col-md-6 col-sm-12  detail-img">
-              <Magnifier src={`${data?.product?.photo}`} height={400}  />
+              <img src={`${data?.product?.photo}`} alt="" />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 d-flex details justify-content-center flex-column">
               <h3>{data.product.name}</h3>
